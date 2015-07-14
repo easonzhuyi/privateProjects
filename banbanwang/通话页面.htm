@@ -1,0 +1,1716 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>办办网-后台</title>
+  <link href="css/index.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid">
+  <div class="topbar">
+    <div class="logo">
+      <img src="images/logo.png" alt="">
+    </div>
+    <div class="employee_info_th">通话页面</div>
+    <span>
+    <a href="">我的资料</a>
+    </span>
+    |
+    <span>
+    <a href="">退出系统</a>
+    </span>
+  </div>
+
+  <div class="main clearfix">
+    <div class="menu">
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="false" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                销售部
+                <span class="i_ctrl"></span>
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+              <ul>
+                <li><a href="">销售中心</a></li>
+                <li><a href="">客户列表</a></li>
+                <li><a href="">中介列表</a></li>
+                <li><a href="">预约带看</a></li>
+                <li><a href="">成交信息表</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingTwo">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="false" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+              楼盘房源库
+                <span class="i_ctrl"></span>
+              </a>
+            </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="panel-body">
+              <ul>
+                <li><a href="">新增楼盘</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingThree">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="false" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                客服部
+                <span class="i_ctrl"></span>
+              </a>
+            </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
+            <div class="panel-body">
+              <ul>
+                <li><a href="">客服中</a></li>
+                <li><a href="">通话记录</a></li>
+                <li><a href="">知识库</a></li>
+                <li><a href="">通话情况</a></li>
+                <li><a href="">通话页面</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingFive">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="false" href="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                更新房源
+                <span class="i_ctrl"></span>
+              </a>
+            </h4>
+          </div>
+          <div id="collapseFive" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingFive">
+            <div class="panel-body">
+              <ul>
+                <li><a href="">审核房源</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingSix">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="false" href="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+              楼盘房源库
+                <span class="i_ctrl"></span>
+              </a>
+            </h4>
+          </div>
+          <div id="collapseSix" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingSix">
+            <div class="panel-body">
+              <ul>
+                <li><a href="">编辑中心</a></li>
+                <li><a href="">资讯管理</a></li>
+                <li><a href="">楼盘专题列表</a></li>
+                <li><a href="">内容专题列表</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cont">
+
+      <div class="row">
+        <div class="m10" role="tabpanel">
+
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#zuke" aria-controls="zuke" role="tab" data-toggle="tab">租客</a></li>
+            <li role="presentation"><a href="#yezhu" aria-controls="yezhu" role="tab" data-toggle="tab">业主</a></li>
+            <li role="presentation"><a href="#tousu" aria-controls="tousu" role="tab" data-toggle="tab">投诉</a></li>
+            <li role="presentation"><a href="#qita" aria-controls="qita" role="tab" data-toggle="tab">其他</a></li>
+            <li role="presentation"><a href="#hymkh" aria-controls="hymkh" role="tab" data-toggle="tab">合约满客户</a></li>
+            <li role="presentation"><a href="#qykh" aria-controls="qykh" role="tab" data-toggle="tab">签约客户</a></li>
+            <li role="presentation"><a href="#zzyxkh" aria-controls="zzyxkh" role="tab" data-toggle="tab">终止意向客户</a></li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="zuke">
+              <div class="panel panel-default panel-per50">
+                <!-- Default panel contents -->
+                <!--<div class="panel-heading">Panel heading</div>-->
+                <div class="mt10">
+                  <strong class="fz16">客户编号：</strong>
+
+                  <!-- Table -->
+                  <table class="table_form">
+                    <tbody>
+                    <tr>
+                      <td>联系人：</td>
+                      <td><input class="inp inp_w200 mr5" type="text"><input id="" type="checkbox" name="">先生&nbsp;<input id="" type="checkbox" name="">小姐</td>
+                    </tr>
+                    <tr>
+                      <td>联系电话：</td>
+                      <td><input class="inp inp_w200" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>联系人类别：</td>
+                      <td><select class="inp inp_w200" id="" name=""><option value="">请选择</option></select></td>
+                    </tr>
+                    <tr>
+                      <td>需求区域：</td>
+                      <td><select class="inp inp_w200" id="" name=""><option value="">请选择</option></select></td>
+                    </tr>
+                    <tr>
+                      <td>公司：</td>
+                      <td><input class="inp inp_w200 mr10" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>行业：</td>
+                      <td><input class="inp inp_w200" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>销售：</td>
+                      <td><input id="" type="checkbox" name="">李文迪</td>
+                    </tr>
+                    <tr>
+                      <td>备注：</td>
+                      <td><textarea id="" class="textarea_per100" name=""></textarea></td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align:top">历史记录：</td>
+                      <td>
+                        <p>
+
+                        2015/03/15    17:30:20      投诉电话        客服A
+
+                        </p>
+                        <p>
+                        2015/03/15    17:30:20      租房需求        中
+                        </p>
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                  <button class="fr bluebtn mid_btn">转接</button>
+                  <button class="fl bluebtn mid_btn">无效电话</button>
+                </div>
+              </div>
+              <div class="panel panel-default panel-per50">
+                <!-- Default panel contents -->
+                <!--<div class="panel-heading">Panel heading</div>-->
+                <div class="m10 pl10">
+                  <strong class="fz16">参考话术：</strong>
+                  <p class="pl10">
+                    话术内容
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="yezhu">
+              <div class="panel panel-default panel-per50">
+                <!-- Default panel contents -->
+                <!--<div class="panel-heading">Panel heading</div>-->
+                <div class="mt10">
+
+                  <!-- Table -->
+                  <table class="table_form">
+                    <tbody>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td>
+                        <label for=""><input id="" type="radio" name="">大业主</label>
+                        <label for=""><input id="" type="radio" name="">小业主</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>备注：</td>
+                      <td><textarea id="" class="textarea_per100" name=""></textarea></td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align:top">历史记录：</td>
+                      <td>
+                        <p>
+
+                        2015/03/15    17:30:20      投诉电话        客服A
+
+                        </p>
+                        <p>
+                        2015/03/15    17:30:20      租房需求        中
+                        </p>
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                  <button class="fr bluebtn mid_btn">转接</button>
+                </div>
+              </div>
+              <div class="panel panel-default panel-per50">
+                <!-- Default panel contents -->
+                <!--<div class="panel-heading">Panel heading</div>-->
+                <div class="m10 pl10">
+                  <strong class="fz16">参考话术：</strong>
+                  <p class="pl10">
+                    话术内容
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="tousu">
+              <div class="panel panel-default panel-per50">
+                <!-- Default panel contents -->
+                <!--<div class="panel-heading">Panel heading</div>-->
+                <div class="mt10">
+                  <button class="bluebd_btn fr">投诉记录</button>
+                  <strong class="fz16">客户编号：</strong>
+
+                  <div class="clear"></div>
+                  <!-- Table -->
+                  <table class="table_form mt10">
+                    <tbody>
+                    <tr>
+                      <td>联系人：</td>
+                      <td><input class="inp inp_w200 mr5" type="text"><input id="" type="checkbox" name="">先生&nbsp;<input id="" type="checkbox" name="">小姐</td>
+                    </tr>
+                    <tr>
+                      <td>联系方式：</td>
+                      <td><input class="inp inp_w200" type="text" placeholder="默认显示电话，可修改"></td>
+                    </tr>
+                    <tr>
+                      <td>投诉类型：</td>
+                      <td><select class="inp inp_w90" id="" name=""><option value="">网站功能</option></select><select class="inp inp_w90 ml10" id="" name=""><option value="">其他</option></select></td>
+                    </tr>
+                    <tr>
+                      <td>相关部门：</td>
+                      <td><select class="inp inp_w200" id="" name=""><option value="">运营部</option><option value="">产品部</option><option value="">客服部</option><option value="">销售部</option><option value="">编辑部</option></select></td>
+                    </tr>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td>
+                        <label for=""><input id="" type="radio" name="">租客</label>
+                        <label for=""><input id="" type="radio" name="">中介</label>
+                        <label for=""><input id="" type="radio" name="">大业主</label>
+                        <label for=""><input id="" type="radio" name="">小业主</label>
+                    </tr>
+                    <tr>
+                      <td>描述：</td>
+                      <td><textarea id="" class="textarea_per100" name=""></textarea></td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align:top">历史记录：</td>
+                      <td>
+                        <p>
+
+                        2015/03/15    17:30:20      投诉电话        客服A
+
+                        </p>
+                        <p>
+                        2015/03/15    17:30:20      租房需求        中
+                        </p>
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                  <button class="fr bluebtn mid_btn">移交部门</button>
+                  <button class="fl bluebtn mid_btn">已解决</button>
+                </div>
+              </div>
+              <div class="panel panel-default panel-per50">
+                <!-- Default panel contents -->
+                <!--<div class="panel-heading">Panel heading</div>-->
+                <div class="m10 pl10">
+                  <strong class="fz16">参考话术：</strong>
+                  <p class="pl10">
+                    话术内容
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="qita">
+              <div class="panel panel-default panel-per50">
+                <!-- Default panel contents -->
+                <!--<div class="panel-heading">Panel heading</div>-->
+                <div class="mt10">
+                  <button class="bluebd_btn fr">记录</button>
+                  <strong class="fz16">客户编号：</strong>
+
+                  <div class="clear"></div>
+                  <!-- Table -->
+                  <table class="table_form mt10">
+                    <tbody>
+                    <tr>
+                      <td>联系人：</td>
+                      <td><input class="inp inp_w200 mr5" type="text"><input id="" type="checkbox" name="">先生&nbsp;<input id="" type="checkbox" name="">小姐</td>
+                    </tr>
+                    <tr>
+                      <td>联系方式：</td>
+                      <td><input class="inp inp_w200" type="text" placeholder="默认显示电话，可修改"></td>
+                    </tr>
+                    <tr>
+                      <td>相关部门：</td>
+                      <td><select class="inp inp_w200" id="" name=""><option value="">运营部</option><option value="">产品部</option><option value="">客服部</option><option value="">销售部</option><option value="">编辑部</option></select></td>
+                    </tr>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td>
+                        <label for=""><input id="" type="radio" name="">租客</label>
+                        <label for=""><input id="" type="radio" name="">中介</label>
+                        <label for=""><input id="" type="radio" name="">大业主</label>
+                        <label for=""><input id="" type="radio" name="">小业主</label>
+                    </tr>
+                    <tr>
+                      <td>描述：</td>
+                      <td><textarea id="" class="textarea_per100" name=""></textarea></td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align:top">历史记录：</td>
+                      <td>
+                        <p>
+
+                        2015/03/15    17:30:20      投诉电话        客服A
+
+                        </p>
+                        <p>
+                        2015/03/15    17:30:20      租房需求        中
+                        </p>
+                      </td>
+                    </tr>
+                    </tbody>
+                  </table>
+                  <button class="fr bluebtn mid_btn">移交部门</button>
+                  <button class="fl bluebtn mid_btn">已解决</button>
+                </div>
+              </div>
+              <div class="panel panel-default panel-per50">
+                <!-- Default panel contents -->
+                <!--<div class="panel-heading">Panel heading</div>-->
+                <div class="m10 pl10">
+                  <strong class="fz16">参考话术：</strong>
+                  <p class="pl10">
+                    话术内容
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="hymkh">
+              <div class="panel panel-default panel-per50">
+                <!-- Default panel contents -->
+                <!--<div class="panel-heading">Panel heading</div>-->
+                  <h2 class="fz18">
+                    合约期满客户回访问卷
+                  </h2>
+                  <div class="markerting">
+                    <form action="">
+                      <fieldset>
+                        1.你的职位
+                        <p>
+                          <input class="inp inp_w200 mr5" type="text">
+                        </p>
+                      </fieldset>
+                      <fieldset>
+                      2.习惯使用哪些搜索功能？
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A习惯直接文字输入</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B条件检索</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+3.会使用匹配式的发布需求功能吗？
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A会</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B不会</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+4.会使用预约看房吗？
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A会</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B不会</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+5.喜欢哪种房源列表展示方式？
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A图片加标题</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B无图片标题只有面积、租金简单的展示方式</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+6.会使用地图找房吗？
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A会</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B不会</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+7.会对楼盘进行点评吗？
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A会</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B不会</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+8.会看楼盘点评吗？
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A会</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B不会</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+9.你觉得哪个租办公室的网站用下来最好？
+<p>
+<input class="inp inp_w200 mr5" type="text">
+</p>
+                      </fieldset>
+                      <fieldset>
+                        10.最好的这个网站中你最常用的是什么功能？
+<p>
+<input class="inp inp_w200" type="text">
+</p>
+                      </fieldset>
+                      <fieldset>
+11.对于租办公室类的网站你觉得哪方面的信息重要？
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A房源信息全面</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B找起来方便</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">C带看方便重要（内容，功能，服务）</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+                      12.找办公室的过程中你觉得最大的阻碍是什么？
+<p>
+<input class="inp inp_w200" type="text">
+</p>
+                      </fieldset>
+                      <fieldset>
+13.租办公室的网站中你觉得什么内容是你在租完办公室以后会持续关注的？
+<p>
+<input class="inp inp_w200" type="text">
+</p>
+                      </fieldset>
+                      <fieldset>
+                      14.什么样的文章会引起租客的兴趣?
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A写字楼生活类</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B租房攻略</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">C带看方便重要（内容，功能，服务）</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+15.在租完办公室以后你还希望能得到些什么方面的服务？（如叫矿泉水服务、花卉等）
+<p>
+<input class="inp inp_w200" type="text">
+</p>
+                      </fieldset>
+                      <fieldset>
+16.平时用什么设备找房?
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A手机</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B电脑</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+17.平时用电脑在哪些渠道找房?
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A百度等网上搜索</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B.58赶集安居客搜房</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">C办办网</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">D其他</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+18.平时用手机在哪些渠道找房？
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A APP</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B 微信</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">C 移动网站</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+19.网站广告位，独家优惠，团购你会感兴趣并点击查看吗？
+<p>
+<input class="inp inp_w200" type="text">
+</p>
+                      </fieldset>
+                      <fieldset>
+20.网上的哪些信息会吸引你并想让你打电话？
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A 文字信息</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B 漂亮的图片？</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+21.微信公众号希望看到哪方面的文章？
+
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A 租赁技巧</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B 租赁注意事项</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">C 行业消息</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">D 社会热点话题</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">E 八卦类话题</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">F其他</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+22.微信公众号希望有哪些快捷功能?
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A 周边找房</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B 地图找房</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">C 自动推荐</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+23.使用网络搜索时您希望搜索到房源还是楼盘？
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A 房源</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B 楼盘</label>
+                       </p>
+                      </fieldset>
+                    </form>
+                  </div>
+                  <!-- Table -->
+                  <button class="bluebtn mid_btn">提交</button>
+                  <button class="bluebtn mid_btn">未完成</button>
+              </div>
+              <div class="panel panel-default panel-per50">
+                <!-- Default panel contents -->
+                <!--<div class="panel-heading">Panel heading</div>-->
+                <div class="m10">
+                  <div class="fr mt5">
+                    <span class="mr10">  客户状态：已签约</span>
+                    <span class="mr10">  来源：办办网</span>
+                  </div>
+                  <div class="fl">
+                    分配销售
+                    <input class="inp inp_w60" id="" type="text" name="" placeholder="李迪文">
+                  </div>
+                  <div class="clear"></div>
+                  <div class="row">
+                    <strong class="fz16">基本信息</strong>
+                    <table class="table_form">
+                      <tbody>
+                      <tr>
+                        <td>联系人类别：</td>
+                        <td><select class="inp inp_w200" id="" name=""><option value="">请选择</option></select></td>
+                      </tr>
+                      <tr>
+                        <td>企业名称：</td>
+                        <td>上海置荟谷投资管理有限公司</td>
+                      </tr>
+                      <tr>
+                        <td>公司：</td>
+                        <td><input class="inp inp_w200 mr10" type="text"></td>
+                      </tr>
+                      <tr>
+                        <td>所属行业：</td>
+                        <td>互联网</td>
+                      </tr>
+                      <tr>
+                        <td>联系人1：</td>
+                        <td>王小姐 联系方式：13661555555 <a href="">删除</a></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2"><button class="bluebtn mid_btn">新增联系人</button></td>
+                      </tr>
+                      <tr>
+                      <td>需求区域：</td>
+                      <td><select class="inp inp_w90" id="" name=""><option value="">需求区域</option></select><select class="inp inp_w90" id="" name=""><option value="">需求价格</option></select><select class="inp inp_w90" id="" name=""><option value="">需求面积</option></select></td> </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="row">
+                    <strong class="fz16">跟进记录</strong>
+                    <div class="mt5">
+                      <button class="fr bluebtn mid_btn">写跟进记录</button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <strong class="fz16">备注</strong>
+                    <p>
+                      2015/03/02  17:30:22    李迪文    需要靠近地铁三号线、十号线。要有简装。
+                    </p>
+                    <div class="mt5">
+                      <button class="fr bluebtn mid_btn">添加备注</button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <strong class="fz16">成交信息</strong>
+                    <p>
+                      成交楼盘：宝山区 高境镇  逸仙大厦
+                    </p>
+
+                    <p>
+                      成交面积：563
+                    </p>
+
+                    <p>
+                      租约到期日：2018年9月
+                    </p>
+
+                    <p>
+                      成交单价：2.5
+                    </p>
+
+                    <p>
+                      物业费：15
+                    </p>
+
+                    <p>
+                      月租金：50000
+                    </p>
+                  </div>
+                  <div class="row">
+                    <strong class="fz16">历史记录</strong>
+                    <p> 2015/03/15 17:30:20 投诉电话 客服A</p>
+                    <p> 2015/03/15 17:30:20 投诉电话 客服A</p>
+                    <p> 2015/03/15 17:30:20 投诉电话 客服A</p>
+                  </div>
+                  <div class="row">
+                    <strong class="fz16">历史通话记录</strong>
+                    <table class="table mt10">
+                    <thead>
+                      <tr>
+                        <th>通话编号</th>
+                        <th>来电时间</th>
+                        <th>来电时长</th>
+                        <th>来电楼盘</th>
+                        <th>接电</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>bbwad14567314</td>
+                        <td>2015/03/02   17：00：00</td>
+                        <td>90秒</td>
+                        <td>中介</td>
+                        <td>
+                          <button class="fr bluebtn sm_btn">听录音</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>bbwad14567314</td>
+                        <td>2015/03/02   17：00：00</td>
+                        <td>90秒</td>
+                        <td>中介</td>
+                        <td>
+                          <button class="fr bluebtn sm_btn">听录音</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>bbwad14567314</td>
+                        <td>2015/03/02   17：00：00</td>
+                        <td>90秒</td>
+                        <td>中介</td>
+                        <td>
+                          <button class="fr bluebtn sm_btn">听录音</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>bbwad14567314</td>
+                        <td>2015/03/02   17：00：00</td>
+                        <td>90秒</td>
+                        <td>中介</td>
+                        <td>
+                          <button class="fr bluebtn sm_btn">听录音</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>bbwad14567314</td>
+                        <td>2015/03/02   17：00：00</td>
+                        <td>90秒</td>
+                        <td>中介</td>
+                        <td>
+                          <button class="fr bluebtn sm_btn">听录音</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </div>
+                  <div class="mt10">
+                    <button class="fr bluebtn mid_btn">保存</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="qykh">
+              <div class="panel panel-default panel-per50">
+                <!-- Default panel contents -->
+                <!--<div class="panel-heading">Panel heading</div>-->
+                  <h2 class="fz18">
+                    签约客户回访问卷
+                  </h2>
+                  <div class="markerting">
+                    <form action="">
+                      <fieldset>
+                        1.你的职位
+                        <p>
+                          <input class="inp inp_w200 mr5" type="text">
+                        </p>
+                      </fieldset>
+                      <fieldset>
+                      2.习惯使用哪些搜索功能？
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A习惯直接文字输入</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B条件检索</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+3.会使用匹配式的发布需求功能吗？
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A会</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B不会</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+4.会使用预约看房吗？
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A会</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B不会</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+5.喜欢哪种房源列表展示方式？
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A图片加标题</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B无图片标题只有面积、租金简单的展示方式</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+6.会使用地图找房吗？
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A会</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B不会</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+7.会对楼盘进行点评吗？
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A会</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B不会</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+8.会看楼盘点评吗？
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A会</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B不会</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+9.你觉得哪个租办公室的网站用下来最好？
+<p>
+<input class="inp inp_w200 mr5" type="text">
+</p>
+                      </fieldset>
+                      <fieldset>
+                        10.最好的这个网站中你最常用的是什么功能？
+<p>
+<input class="inp inp_w200" type="text">
+</p>
+                      </fieldset>
+                      <fieldset>
+11.对于租办公室类的网站你觉得哪方面的信息重要？
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A房源信息全面</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B找起来方便</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">C带看方便重要（内容，功能，服务）</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+                      12.找办公室的过程中你觉得最大的阻碍是什么？
+<p>
+<input class="inp inp_w200" type="text">
+</p>
+                      </fieldset>
+                      <fieldset>
+13.租办公室的网站中你觉得什么内容是你在租完办公室以后会持续关注的？
+<p>
+<input class="inp inp_w200" type="text">
+</p>
+                      </fieldset>
+                      <fieldset>
+                      14.什么样的文章会引起租客的兴趣?
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A写字楼生活类</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B租房攻略</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">C带看方便重要（内容，功能，服务）</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+15.在租完办公室以后你还希望能得到些什么方面的服务？（如叫矿泉水服务、花卉等）
+<p>
+<input class="inp inp_w200" type="text">
+</p>
+                      </fieldset>
+                      <fieldset>
+16.平时用什么设备找房?
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A手机</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B电脑</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+17.平时用电脑在哪些渠道找房?
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A百度等网上搜索</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B.58赶集安居客搜房</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">C办办网</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">D其他</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+18.平时用手机在哪些渠道找房？
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A APP</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B 微信</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">C 移动网站</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+19.网站广告位，独家优惠，团购你会感兴趣并点击查看吗？
+<p>
+<input class="inp inp_w200" type="text">
+</p>
+                      </fieldset>
+                      <fieldset>
+20.网上的哪些信息会吸引你并想让你打电话？
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A 文字信息</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B 漂亮的图片？</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+21.微信公众号希望看到哪方面的文章？
+
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A 租赁技巧</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B 租赁注意事项</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">C 行业消息</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">D 社会热点话题</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">E 八卦类话题</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">F其他</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+22.微信公众号希望有哪些快捷功能?
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A 周边找房</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B 地图找房</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">C 自动推荐</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+23.使用网络搜索时您希望搜索到房源还是楼盘？
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A 房源</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B 楼盘</label>
+                       </p>
+                      </fieldset>
+                    </form>
+                  </div>
+                  <!-- Table -->
+                  <button class="bluebtn mid_btn">提交</button>
+                  <button class="bluebtn mid_btn">未完成</button>
+              </div>
+              <div class="panel panel-default panel-per50">
+                <!-- Default panel contents -->
+                <!--<div class="panel-heading">Panel heading</div>-->
+                <div class="m10">
+                  <div class="fr mt5">
+                    <span class="mr10">  客户状态：已签约</span>
+                    <span class="mr10">  来源：办办网</span>
+                  </div>
+                  <div class="fl">
+                    分配销售
+                    <input class="inp inp_w60" id="" type="text" name="" placeholder="李迪文">
+                  </div>
+                  <div class="clear"></div>
+                  <div class="row">
+                    <strong class="fz16">基本信息</strong>
+                    <table class="table_form">
+                      <tbody>
+                      <tr>
+                        <td>联系人类别：</td>
+                        <td><select class="inp inp_w200" id="" name=""><option value="">请选择</option></select></td>
+                      </tr>
+                      <tr>
+                        <td>企业名称：</td>
+                        <td>上海置荟谷投资管理有限公司</td>
+                      </tr>
+                      <tr>
+                        <td>公司：</td>
+                        <td><input class="inp inp_w200 mr10" type="text"></td>
+                      </tr>
+                      <tr>
+                        <td>所属行业：</td>
+                        <td>互联网</td>
+                      </tr>
+                      <tr>
+                        <td>联系人1：</td>
+                        <td>王小姐 联系方式：13661555555 <a href="">删除</a></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2"><button class="bluebtn mid_btn">新增联系人</button></td>
+                      </tr>
+                      <tr>
+                      <td>需求区域：</td>
+                      <td><select class="inp inp_w90" id="" name=""><option value="">需求区域</option></select><select class="inp inp_w90" id="" name=""><option value="">需求价格</option></select><select class="inp inp_w90" id="" name=""><option value="">需求面积</option></select></td> </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="row">
+                    <strong class="fz16">跟进记录</strong>
+                    <div class="mt5">
+                      <button class="fr bluebtn mid_btn">写跟进记录</button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <strong class="fz16">备注</strong>
+                    <p>
+                      2015/03/02  17:30:22    李迪文    需要靠近地铁三号线、十号线。要有简装。
+                    </p>
+                    <div class="mt5">
+                      <button class="fr bluebtn mid_btn">添加备注</button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <strong class="fz16">成交信息</strong>
+                    <p>
+                      成交楼盘：宝山区 高境镇  逸仙大厦
+                    </p>
+
+                    <p>
+                      成交面积：563
+                    </p>
+
+                    <p>
+                      租约到期日：2018年9月
+                    </p>
+
+                    <p>
+                      成交单价：2.5
+                    </p>
+
+                    <p>
+                      物业费：15
+                    </p>
+
+                    <p>
+                      月租金：50000
+                    </p>
+                  </div>
+                  <div class="row">
+                    <strong class="fz16">历史记录</strong>
+                    <p> 2015/03/15 17:30:20 投诉电话 客服A</p>
+                    <p> 2015/03/15 17:30:20 投诉电话 客服A</p>
+                    <p> 2015/03/15 17:30:20 投诉电话 客服A</p>
+                  </div>
+                  <div class="row">
+                    <strong class="fz16">历史通话记录</strong>
+                    <table class="table mt10">
+                    <thead>
+                      <tr>
+                        <th>通话编号</th>
+                        <th>来电时间</th>
+                        <th>来电时长</th>
+                        <th>来电楼盘</th>
+                        <th>接电</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>bbwad14567314</td>
+                        <td>2015/03/02   17：00：00</td>
+                        <td>90秒</td>
+                        <td>中介</td>
+                        <td>
+                          <button class="fr bluebtn sm_btn">听录音</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>bbwad14567314</td>
+                        <td>2015/03/02   17：00：00</td>
+                        <td>90秒</td>
+                        <td>中介</td>
+                        <td>
+                          <button class="fr bluebtn sm_btn">听录音</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>bbwad14567314</td>
+                        <td>2015/03/02   17：00：00</td>
+                        <td>90秒</td>
+                        <td>中介</td>
+                        <td>
+                          <button class="fr bluebtn sm_btn">听录音</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>bbwad14567314</td>
+                        <td>2015/03/02   17：00：00</td>
+                        <td>90秒</td>
+                        <td>中介</td>
+                        <td>
+                          <button class="fr bluebtn sm_btn">听录音</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>bbwad14567314</td>
+                        <td>2015/03/02   17：00：00</td>
+                        <td>90秒</td>
+                        <td>中介</td>
+                        <td>
+                          <button class="fr bluebtn sm_btn">听录音</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </div>
+                  <div class="mt10">
+                    <button class="fr bluebtn mid_btn">保存</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="zzyxkh">
+              <div class="panel panel-default panel-per50">
+                <!-- Default panel contents -->
+                <!--<div class="panel-heading">Panel heading</div>-->
+                  <h2 class="fz18">
+                    终止意向客户回访问卷
+                  </h2>
+                  <div class="markerting">
+                    <form action="">
+                      <fieldset>
+                        1.你的职位
+                        <p>
+                          <input class="inp inp_w200 mr5" type="text">
+                        </p>
+                      </fieldset>
+                      <fieldset>
+                      2.习惯使用哪些搜索功能？
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A习惯直接文字输入</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B条件检索</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+3.会使用匹配式的发布需求功能吗？
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A会</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B不会</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+4.会使用预约看房吗？
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A会</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B不会</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+5.喜欢哪种房源列表展示方式？
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A图片加标题</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B无图片标题只有面积、租金简单的展示方式</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+6.会使用地图找房吗？
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A会</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B不会</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+7.会对楼盘进行点评吗？
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A会</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B不会</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+8.会看楼盘点评吗？
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A会</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B不会</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+9.你觉得哪个租办公室的网站用下来最好？
+<p>
+<input class="inp inp_w200 mr5" type="text">
+</p>
+                      </fieldset>
+                      <fieldset>
+                        10.最好的这个网站中你最常用的是什么功能？
+<p>
+<input class="inp inp_w200" type="text">
+</p>
+                      </fieldset>
+                      <fieldset>
+11.对于租办公室类的网站你觉得哪方面的信息重要？
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A房源信息全面</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B找起来方便</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">C带看方便重要（内容，功能，服务）</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+                      12.找办公室的过程中你觉得最大的阻碍是什么？
+<p>
+<input class="inp inp_w200" type="text">
+</p>
+                      </fieldset>
+                      <fieldset>
+13.租办公室的网站中你觉得什么内容是你在租完办公室以后会持续关注的？
+<p>
+<input class="inp inp_w200" type="text">
+</p>
+                      </fieldset>
+                      <fieldset>
+                      14.什么样的文章会引起租客的兴趣?
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A写字楼生活类</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B租房攻略</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">C带看方便重要（内容，功能，服务）</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+15.在租完办公室以后你还希望能得到些什么方面的服务？（如叫矿泉水服务、花卉等）
+<p>
+<input class="inp inp_w200" type="text">
+</p>
+                      </fieldset>
+                      <fieldset>
+16.平时用什么设备找房?
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A手机</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B电脑</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+17.平时用电脑在哪些渠道找房?
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A百度等网上搜索</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B.58赶集安居客搜房</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">C办办网</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">D其他</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+18.平时用手机在哪些渠道找房？
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A APP</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B 微信</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">C 移动网站</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+19.网站广告位，独家优惠，团购你会感兴趣并点击查看吗？
+<p>
+<input class="inp inp_w200" type="text">
+</p>
+                      </fieldset>
+                      <fieldset>
+20.网上的哪些信息会吸引你并想让你打电话？
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A 文字信息</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B 漂亮的图片？</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+21.微信公众号希望看到哪方面的文章？
+
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A 租赁技巧</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B 租赁注意事项</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">C 行业消息</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">D 社会热点话题</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">E 八卦类话题</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">F其他</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+22.微信公众号希望有哪些快捷功能?
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A 周边找房</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B 地图找房</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">C 自动推荐</label>
+                       </p>
+                      </fieldset>
+                      <fieldset>
+23.使用网络搜索时您希望搜索到房源还是楼盘？
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">A 房源</label>
+                       </p>
+                       <p>
+                         <label for="">
+                         <input id="" type="radio" name="">B 楼盘</label>
+                       </p>
+                      </fieldset>
+                    </form>
+                  </div>
+                  <!-- Table -->
+                  <button class="bluebtn mid_btn">提交</button>
+                  <button class="bluebtn mid_btn">未完成</button>
+              </div>
+              <div class="panel panel-default panel-per50">
+                <!-- Default panel contents -->
+                <!--<div class="panel-heading">Panel heading</div>-->
+                <div class="m10">
+                  <div class="fr mt5">
+                    <span class="mr10">  客户状态：已签约</span>
+                    <span class="mr10">  来源：办办网</span>
+                  </div>
+                  <div class="fl">
+                    分配销售
+                    <input class="inp inp_w60" id="" type="text" name="" placeholder="李迪文">
+                  </div>
+                  <div class="clear"></div>
+                  <div class="row">
+                    <strong class="fz16">基本信息</strong>
+                    <table class="table_form">
+                      <tbody>
+                      <tr>
+                        <td>联系人类别：</td>
+                        <td><select class="inp inp_w200" id="" name=""><option value="">请选择</option></select></td>
+                      </tr>
+                      <tr>
+                        <td>企业名称：</td>
+                        <td>上海置荟谷投资管理有限公司</td>
+                      </tr>
+                      <tr>
+                        <td>公司：</td>
+                        <td><input class="inp inp_w200 mr10" type="text"></td>
+                      </tr>
+                      <tr>
+                        <td>所属行业：</td>
+                        <td>互联网</td>
+                      </tr>
+                      <tr>
+                        <td>联系人1：</td>
+                        <td>王小姐 联系方式：13661555555 <a href="">删除</a></td>
+                      </tr>
+                      <tr>
+                        <td colspan="2"><button class="bluebtn mid_btn">新增联系人</button></td>
+                      </tr>
+                      <tr>
+                      <td>需求区域：</td>
+                      <td><select class="inp inp_w90" id="" name=""><option value="">需求区域</option></select><select class="inp inp_w90" id="" name=""><option value="">需求价格</option></select><select class="inp inp_w90" id="" name=""><option value="">需求面积</option></select></td> </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="row">
+                    <strong class="fz16">跟进记录</strong>
+                    <div class="mt5">
+                      <button class="fr bluebtn mid_btn">写跟进记录</button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <strong class="fz16">备注</strong>
+                    <p>
+                      2015/03/02  17:30:22    李迪文    需要靠近地铁三号线、十号线。要有简装。
+                    </p>
+                    <div class="mt5">
+                      <button class="fr bluebtn mid_btn">添加备注</button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <strong class="fz16">成交信息</strong>
+                    <p>
+                      成交楼盘：宝山区 高境镇  逸仙大厦
+                    </p>
+
+                    <p>
+                      成交面积：563
+                    </p>
+
+                    <p>
+                      租约到期日：2018年9月
+                    </p>
+
+                    <p>
+                      成交单价：2.5
+                    </p>
+
+                    <p>
+                      物业费：15
+                    </p>
+
+                    <p>
+                      月租金：50000
+                    </p>
+                  </div>
+                  <div class="row">
+                    <strong class="fz16">历史记录</strong>
+                    <p> 2015/03/15 17:30:20 投诉电话 客服A</p>
+                    <p> 2015/03/15 17:30:20 投诉电话 客服A</p>
+                    <p> 2015/03/15 17:30:20 投诉电话 客服A</p>
+                  </div>
+                  <div class="row">
+                    <strong class="fz16">历史通话记录</strong>
+                    <table class="table mt10">
+                    <thead>
+                      <tr>
+                        <th>通话编号</th>
+                        <th>来电时间</th>
+                        <th>来电时长</th>
+                        <th>来电楼盘</th>
+                        <th>接电</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>bbwad14567314</td>
+                        <td>2015/03/02   17：00：00</td>
+                        <td>90秒</td>
+                        <td>中介</td>
+                        <td>
+                          <button class="fr bluebtn sm_btn">听录音</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>bbwad14567314</td>
+                        <td>2015/03/02   17：00：00</td>
+                        <td>90秒</td>
+                        <td>中介</td>
+                        <td>
+                          <button class="fr bluebtn sm_btn">听录音</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>bbwad14567314</td>
+                        <td>2015/03/02   17：00：00</td>
+                        <td>90秒</td>
+                        <td>中介</td>
+                        <td>
+                          <button class="fr bluebtn sm_btn">听录音</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>bbwad14567314</td>
+                        <td>2015/03/02   17：00：00</td>
+                        <td>90秒</td>
+                        <td>中介</td>
+                        <td>
+                          <button class="fr bluebtn sm_btn">听录音</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>bbwad14567314</td>
+                        <td>2015/03/02   17：00：00</td>
+                        <td>90秒</td>
+                        <td>中介</td>
+                        <td>
+                          <button class="fr bluebtn sm_btn">听录音</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </div>
+                  <div class="mt10">
+                    <button class="fr bluebtn mid_btn">保存</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="copyright">&copy;版权所有 办办网 2015</div>
+  </div>
+</div>
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script>
+</script>
+</body>
+</html>
