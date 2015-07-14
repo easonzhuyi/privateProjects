@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>11首页</title>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="container">
+  <div class="topbar">
+    <div class="logo">
+      <img src="img/logo.png" alt="">
+    </div>
+    <span>Miss Wu</span>
+    <span>
+    <a href=""><i class="topbar_icon ico-user"></i></a>
+    </span>
+    <span>
+    <a href=""><i class="topbar_icon ico-msg"></i><i class="msg_num">51</i></a>
+    </span>
+    <span class="option">
+    <i class="topbar_icon ico-option"></i>
+    <em class="option_tip">
+      <a href="">Profile Settings</a>
+      <a href="">Logout</a><i class="i_arrow"></i><i class="i_arrow_bd"></i>
+    </em>
+    </span>
+  </div>
+
+  <div class="main clearfix">
+    <div class="menu">
+      <ul>
+        <li><a href=""><span class="i_area"><i class="menu_icon ico-teacher"></i></span>Teachers</a></li>
+        <li><a href=""><span class="i_area"><i class="menu_icon ico-course"></i></span>Course</a></li>
+        <li><a href=""><span class="i_area"><i class="menu_icon ico-class"></i></span>Classes</a></li>
+        <li><a href=""><span class="i_area"><i class="menu_icon ico-registerCourse"></i></span>Register Course</a></li>
+        <li><a href=""><span class="i_area"><i class="menu_icon ico-schedule"></i></span>Schedule</a></li>
+        <li><a href=""><span class="i_area"><i class="menu_icon ico-questionnaire"></i></span>Questionnaire</a></li>
+        <li><a href=""><span class="i_area"><i class="menu_icon ico-register"></i></span>Registers</a></li>
+        <li><a href=""><span class="i_area"><i class="menu_icon ico-feedback"></i></span>Feedback</a></li>
+      </ul>
+    </div>
+    <div class="cont">
+      <div class="titA">
+        <h2>Class List</h2>
+        <div class="operatebar fr">
+          <span><i class="function_icon ico-save"></i>submit</span>
+        </div>
+      </div>
+      <div class="searchbar">
+        <div class="searchbox_w360">
+          <input id="" value="Insert Class Name" class="inp" type="text" name="">
+        </div>
+      </div>
+
+      <table class="tableB">
+        <tr>
+          <th style="width:70px">User<br>Account</th>
+          <th style="width:70px">Student<br>Number</th>
+          <th style="width:100px">Name Chinese</th>
+          <th style="width:100px">Name English</th>
+          <th style="width:180px">Email</th>
+          <th style="width:120px">Cell Phone</th>
+          <th style="width:70px">Major</th>
+        </tr>
+        <tr>
+          <td><input value="type pls" id="" class="inp" type="text" name=""></td>
+          <td><input id="" class="inp" type="text" name=""></td>
+          <td><input id="" class="inp" type="text" name=""></td>
+          <td><input id="" class="inp" type="text" name=""></td>
+          <td><input id="" class="inp" type="text" name=""></td>
+          <td><input id="" class="inp" type="text" name=""></td>
+          <td><input id="" class="inp" type="text" name=""></td>
+        </tr>
+      </table>
+
+      <div class="row pb10">
+        <strong class="toc"><i class="function_icon ico-cancel"></i>Cancel</strong>
+        <strong class="toc ml10"><i class="function_icon ico-import"></i>Import</strong>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+<!--[if lte IE 6]>
+<script src="js/DD_belatedPNG_0.0.8a-min.js"></script>
+<script>
+DD_belatedPNG.fix('.png,.menu_icon,.function_icon'); // argument is a CSS selector
+</script>
+<![endif]-->
+
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+$(function(){
+    //模拟select插件调用
+    $('.topbar .ico-option').bind('click',function(){
+      $('.topbar .option_tip').show();
+      })
+    $('body').bind('click',function(){
+      $('.topbar .option_tip').hide();
+      })
+    $('.topbar .ico-option,.topbar .option_tip').bind('click',function(event){
+      event.stopPropagation();
+      })
+ $('.i_select').iSimulateSelect({'width':0});
+})
+</script>
+</body>
+</html>

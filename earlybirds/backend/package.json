@@ -1,0 +1,13 @@
+{
+  "name": "backend",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-compass": "0.8.0",
+    "grunt-contrib-watch": "0.4.3",
+    "grunt-contrib-uglify": "~0.2.4",
+    "grunt-htmlhint": "*",
+    "matchdep": "*",
+    "grunt-browser-sync": "^0.9.1"
+  }
+}

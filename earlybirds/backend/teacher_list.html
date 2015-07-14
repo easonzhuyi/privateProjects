@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>首页</title>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="container">
+  <div class="topbar">
+    <div class="logo">
+      <img src="img/logo.png" alt="">
+    </div>
+    <span>Miss Wu</span>
+    <span>
+    <a href=""><i class="topbar_icon ico-user"></i></a>
+    </span>
+    <span>
+    <a href=""><i class="topbar_icon ico-msg"></i><i class="msg_num">51</i></a>
+    </span>
+    <span class="option">
+    <i class="topbar_icon ico-option"></i>
+    <em class="option_tip">
+      <a href="">Profile Settings</a>
+      <a href="">Logout</a><i class="i_arrow"></i><i class="i_arrow_bd"></i>
+    </em>
+    </span>
+  </div>
+
+  <div class="main clearfix">
+    <div class="menu">
+      <ul>
+        <li><a href=""><span class="i_area"><i class="menu_icon ico-teacher"></i></span>Teachers</a></li>
+        <li><a href=""><span class="i_area"><i class="menu_icon ico-course"></i></span>Course</a></li>
+        <li><a href=""><span class="i_area"><i class="menu_icon ico-class"></i></span>Classes</a></li>
+        <li><a href=""><span class="i_area"><i class="menu_icon ico-registerCourse"></i></span>Register Course</a></li>
+        <li><a href=""><span class="i_area"><i class="menu_icon ico-schedule"></i></span>Schedule</a></li>
+        <li><a href=""><span class="i_area"><i class="menu_icon ico-questionnaire"></i></span>Questionnaire</a></li>
+        <li><a href=""><span class="i_area"><i class="menu_icon ico-register"></i></span>Registers</a></li>
+        <li><a href=""><span class="i_area"><i class="menu_icon ico-feedback"></i></span>Feedback</a></li>
+      </ul>
+    </div>
+    <div class="cont">
+      <div class="titA">
+        <h2>Teachers List</h2>
+        <div class="operatebar fr">
+          <span><i class="function_icon ico-export"></i>Export teacher list</span>
+          <span><i class="function_icon ico-add"></i>Add</span>
+        </div>
+      </div>
+      <div class="searchbar">
+        <div class="searchbox_w360">
+          <input id="" value="Teacher‘s Name" class="inp" type="text" name="">
+          <input class="btn ico-search" type="submit" value="">
+        </div>
+      </div>
+
+      <ul class="ulA">
+        <li>
+          <div class="operatebar">
+            <span><i class="function_icon ico-delete"></i>Delete</span>
+            <span><i class="function_icon ico-view"></i>View</span>
+          </div>
+          <img src="pic/avatar.jpg" alt="">
+          <span class="fb">Chris Paul</span>
+          <span class="cGray">University of California, Berkeley，  Master</span>
+        </li>
+        <li>
+          <div class="operatebar">
+            <span><i class="function_icon ico-delete"></i>Delete</span>
+            <span><i class="function_icon ico-view"></i>View</span>
+          </div>
+          <img src="pic/avatar.jpg" alt="">
+          <span class="fb">Chris Paul</span>
+          <span class="cGray">University of California, Berkeley，  Master</span>
+        </li>
+        <li>
+          <div class="operatebar">
+            <span><i class="function_icon ico-delete"></i>Delete</span>
+            <span><i class="function_icon ico-view"></i>View</span>
+          </div>
+          <img src="pic/avatar.jpg" alt="">
+          <span class="fb">Chris Paul</span>
+          <span class="cGray">University of California, Berkeley，  Master</span>
+        </li>
+        <li>
+          <div class="operatebar">
+            <span><i class="function_icon ico-delete"></i>Delete</span>
+            <span><i class="function_icon ico-view"></i>View</span>
+          </div>
+          <img src="pic/avatar.jpg" alt="">
+          <span class="fb">Chris Paul</span>
+          <span class="cGray">University of California, Berkeley，  Master</span>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+<!--[if lte IE 6]>
+<script src="js/DD_belatedPNG_0.0.8a-min.js"></script>
+<script>
+DD_belatedPNG.fix('.png,.menu_icon,.function_icon'); // argument is a CSS selector
+</script>
+<![endif]-->
+
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+$(function(){
+    //模拟select插件调用
+    $('.topbar .ico-option').bind('click',function(){
+      $('.topbar .option_tip').show();
+      })
+    $('body').bind('click',function(){
+      $('.topbar .option_tip').hide();
+      })
+    $('.topbar .ico-option,.topbar .option_tip').bind('click',function(event){
+      event.stopPropagation();
+      })
+ $('.i_select').iSimulateSelect({'width':0});
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>首页</title>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="container">
+  <div class="topbar">
+    <div class="logo">
+      <img src="img/logo.png" alt="">
+    </div>
+    <span>Miss Wu</span>
+    <span>
+    <a href=""><i class="topbar_icon ico-user"></i></a>
+    </span>
+    <span>
+    <a href=""><i class="topbar_icon ico-msg"></i><i class="msg_num">51</i></a>
+    </span>
+    <span class="option">
+    <i class="topbar_icon ico-option"></i>
+    <em class="option_tip">
+      <a href="">Profile Settings</a>
+      <a href="">Logout</a><i class="i_arrow"></i><i class="i_arrow_bd"></i>
+    </em>
+    </span>
+  </div>
+
+  <div class="main clearfix">
+    <div class="menu">
+      <ul>
+        <li><a href=""><span class="i_area"><i class="menu_icon ico-teacher"></i></span>Teachers</a></li>
+        <li><a href=""><span class="i_area"><i class="menu_icon ico-course"></i></span>Course</a></li>
+        <li><a href=""><span class="i_area"><i class="menu_icon ico-class"></i></span>Classes</a></li>
+        <li><a href=""><span class="i_area"><i class="menu_icon ico-registerCourse"></i></span>Register Course</a></li>
+        <li><a href=""><span class="i_area"><i class="menu_icon ico-schedule"></i></span>Schedule</a></li>
+        <li><a href=""><span class="i_area"><i class="menu_icon ico-questionnaire"></i></span>Questionnaire</a></li>
+        <li><a href=""><span class="i_area"><i class="menu_icon ico-register"></i></span>Registers</a></li>
+        <li><a href=""><span class="i_area"><i class="menu_icon ico-feedback"></i></span>Feedback</a></li>
+      </ul>
+    </div>
+    <div class="cont">
+      <div class="titA">
+        <h2>Questionnaire</h2>
+        <div class="operatebar fr">
+          <span><i class="function_icon ico-export"></i>Export</span>
+          <span><i class="function_icon ico-print"></i>Print</span>
+          <span><i class="function_icon ico-edit"></i>Edit</span>
+        </div>
+      </div>
+      <div class="searchbar">
+        <span class="fr lh30">Current Semester: 2013 Autumn </span>
+        <span class="f18 pl10">Q 3 writing</span>
+      </div>
+
+      <div class="bdt1 mt10">
+
+      <table class="tableE">
+        <tr>
+        <td class="td1">&nbsp;</td>
+        <td class="td2">&nbsp;</td>
+        <td><i class="ico-face_bad"></i></td>
+        <td><i class="ico-face_normal"></i></td>
+        <td class="last"><i class="ico-face_happy"></i></td>
+        </tr>
+        <tr>
+        <td class="td1">1</td>
+        <td class="td2">Q 3 writingQ 3 writingQ 3 writing</td>
+        <td><input id="" type="checkbox" checked disabled name=""></td>
+        <td><input id="" type="checkbox" disabled name=""></td>
+        <td class="last"><input id="" type="checkbox" disabled name=""></td>
+        </tr>
+      </table>
+      </div>
+
+      <div class="bdtb1 mt10">
+
+        <span class="fr toc"><i class="ico-send"></i>Send</span>
+
+        <select class="i_select" id="" name=""><option value="">Teacher</option></select>
+        <select class="i_select" id="" name=""><option value="">Class</option></select>
+        <select class="i_select" id="" name=""><option value="">Course</option></select>
+
+      </div>
+
+
+      <div class="row pb10 mt20">
+        <strong class="toc"><i class="function_icon ico-back"></i>Back</strong>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+<!--[if lte IE 6]>
+<script src="js/DD_belatedPNG_0.0.8a-min.js"></script>
+<script>
+DD_belatedPNG.fix('.png,.menu_icon,.function_icon'); // argument is a CSS selector
+</script>
+<![endif]-->
+
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+$(function(){
+    //模拟select插件调用
+    $('.topbar .ico-option').bind('click',function(){
+      $('.topbar .option_tip').show();
+      })
+    $('body').bind('click',function(){
+      $('.topbar .option_tip').hide();
+      })
+    $('.topbar .ico-option,.topbar .option_tip').bind('click',function(event){
+      event.stopPropagation();
+      })
+ $('.i_select').iSimulateSelect({'width':0});
+})
+</script>
+</body>
+</html>
