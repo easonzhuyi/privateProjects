@@ -1,4 +1,4 @@
-.header .logo,.ico_user,.menu-sift-arrow,.menu-inpbox-btn,.ico_cart,.menu-cart-arrow,.menu-sift-rela li a .ico_arrow,.carousel1-prev,.carousel1-next,.carousel1 .jcarousel-control a,.ico_clock{
+.header .logo,.ico_user,.menu-sift-arrow,.menu-inpbox-btn,.ico_cart,.menu-cart-arrow,.menu-sift-rela li a .ico_arrow,.carousel1-prev,.carousel1-next,.carousel1 .jcarousel-control span,.ico_clock{
   background: url(../images/spr.png);
 }
 .topnav{
@@ -187,7 +187,7 @@
   *display: inline;
   *zoom: 1;
 }
-.carousel1 .jcarousel-control a{
+.carousel1 .jcarousel-control span{
   display: inline-block;
   vertical-align: middle;
   *display: inline;
@@ -198,8 +198,9 @@
   line-height: 999;
   overflow: hidden;
   background-position: 0 -50px;
+  cursor: pointer;
 }
-.carousel1 .jcarousel-control a.cur{
+.carousel1 .jcarousel-control span.cur{
   background-position: -30px -50px;
 }
 .carousel1-clip {
@@ -208,6 +209,11 @@
   margin: 0;
   overflow: hidden;
   position: relative;
+}
+.carousel1 ul{
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .carousel1 li{
   float: left;
@@ -220,6 +226,7 @@
   z-index: 3;
   line-height: 9999px;
   overflow: hidden;
+  cursor: pointer;
 }
 .carousel1-prev{
   left: 20px;
@@ -382,7 +389,7 @@
   text-align: center;
 }
 .footer-imglist img{
-  margin: 0 8px;
+  margin: 0 6px;
 }
 .copyright {
   text-align: center;
