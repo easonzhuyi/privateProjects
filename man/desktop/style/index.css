@@ -1,24 +1,28 @@
-.header .logo,.ico_user,.menu-sift-arrow,.menu-inpbox-btn,.ico_cart,.menu-cart-arrow,.menu-sift-rela li a .ico_arrow,.carousel1-prev,.carousel1-next,.carousel1 .jcarousel-control span,.ico_clock{
+.header .logo, .ico_user, .menu-sift-arrow, .menu-inpbox-btn, .ico_cart, .menu-cart-arrow, .menu-sift-rela li a .ico_arrow, .carousel1-prev, .carousel1-next, .carousel1 .jcarousel-control span, .ico_clock {
   background: url(../images/spr.png);
 }
-.topnav{
+.topnav {
   height: 36px;
   line-height: 36px;
   border-bottom: 1px solid #e1e1e1;
   background-color: #f5f5f5;
 }
-.topnav-bar{
+.topnav-bar {
   padding-right: 20px;
   float: right;
 }
-.topnav-bar a{
+.topnav-bar a {
   margin-left: 34px;
 }
-
-.header{
-
+.topnav-rate {
+  float: left;
+  font-size: 14px;
 }
-.header .logo{
+.topnav-rate span {
+  margin: 0 5px 0 10px;
+}
+.header {}
+.header .logo {
   width: 252px;
   height: 40px;
   float: left;
@@ -26,26 +30,25 @@
   margin: 28px;
   background-position: 0 0;
 }
-.header-bar{
+.header-bar {
   padding: 50px 20px 0 0;
   float: right;
 }
-.header-bar a{
+.header-bar a {
   margin-left: 42px;
 }
-.ico_user{
+.ico_user {
   width: 15px;
   height: 16px;
   margin-right: 3px;
   background-position: -60px -50px;
 }
-
-.menu{
+.menu {
   background-color: #333;
   line-height: 45px;
   font-size: 14px;
 }
-.menu-sift{
+.menu-sift {
   width: 270px;
   padding-left: 30px;
   height: 45px;
@@ -57,7 +60,7 @@
   position: relative;
   cursor: pointer;
 }
-.menu-sift-arrow{
+.menu-sift-arrow {
   width: 16px;
   height: 10px;
   position: absolute;
@@ -66,7 +69,7 @@
   z-index: 2;
   background-position: right -80px;
 }
-.menu-sift-rela{
+.menu-sift-rela {
   width: 298px;
   height: 355px;
   border-width: 0 1px 1px;
@@ -77,12 +80,12 @@
   top: 45px;
   left: 0;
 }
-.menu-sift-rela ul{
+.menu-sift-rela ul {
   padding-top: 8px;
   padding-left: 32px;
 }
-.menu-sift-rela li{
-  padding: 30px 0 0 0;
+.menu-sift-rela li {
+  margin: 30px 0 0 0;
   width: 235px;
 }
 .menu-sift-rela li a{
@@ -95,7 +98,10 @@
   overflow: hidden;
   position: relative;
 }
-.menu-sift-rela li a .ico_arrow{
+ .menu-sift-rela li.cur a{
+   color: #f44444;
+ }
+.menu-sift-rela li a .ico_arrow {
   width: 6px;
   height: 12px;
   position: absolute;
@@ -103,12 +109,42 @@
   top: 2px;
   background-position: right -110px;
 }
-.menu-inpbox{
+.menu-sift-rela .sec-menu {
+  height: 325px;
+  width: 455px;
+  padding: 15px 40px;
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background-color: #fff;
+  z-index: 9;
+  border: 1px solid #e4e4e4;
+  border-top: 0 none;
+}
+.menu-sift-rela .sec-menu dt {
+  margin-top: 15px;
+  line-height: 32px;
+  font-size: 14px;
+  border-bottom: 1px solid #dddeec;
+  color: #333;
+}
+.menu-sift-rela .sec-menu dd{
+  padding: 15px 0;
+  line-height: 18px;
+}
+.menu-sift-rela .sec-menu dd a {
+  font-size: 12px;
+  display: inline;
+  margin-right: 20px;
+  color: #a6a6a6;
+}
+.menu-inpbox {
   width: 600px;
   padding: 5px 0 5px 50px;
   float: left;
 }
-.menu-inpbox-inp{
+.menu-inpbox-inp {
   width: 510px;
   padding: 10px 0 10px 25px;
   height: 15px;
@@ -118,7 +154,7 @@
   border: 0 none;
   font-size: 14px;
 }
-.menu-inpbox-btn{
+.menu-inpbox-btn {
   width: 60px;
   height: 35px;
   float: left;
@@ -127,42 +163,40 @@
   background-color: #f44444;
   cursor: pointer;
 }
-.menu-cart{
+.menu-cart {
   width: 250px;
   padding-left: 10px;
   float: left;
   color: #fff;
 }
-.menu-cart a,.menu-cart a:hover{
+.menu-cart a, .menu-cart a:hover {
   color: #fff;
   text-decoration: none;
 }
-.ico_cart{
+.ico_cart {
   width: 26px;
   height: 24px;
   margin-right: 10px;
   background-position: -60px -140px;
 }
-.menu-cart-arrow{
+.menu-cart-arrow {
   width: 7px;
   height: 10px;
   margin-left: 10px;
   background-position: right -50px;
 }
-
 .menu-sift-rela li a:hover {
   text-decoration: none;
   color: #f44444;
 }
-
-.carousel1{
+.carousel1 {
   width: 980px;
   height: 355px;
   overflow: hidden;
   margin-left: 300px;
   position: relative;
 }
-.carousel1 .jcarousel-control{
+.carousel1 .jcarousel-control {
   width: 100%;
   height: 48px;
   position: absolute;
@@ -171,15 +205,15 @@
   z-index: 2;
   text-align: center;
 }
-.carousel1 .jcarousel-control .mask{
+.carousel1 .jcarousel-control .mask {
   width: 100%;
   height: 48px;
   background-color: #000;
-  filter:alpha(opacity=50);
+  filter: alpha(opacity=50);
   opacity: .5;
   margin-bottom: -48px;
 }
-.carousel1 .jcarousel-control .counter{
+.carousel1 .jcarousel-control .counter {
   padding: 15px 0;
   position: relative;
   display: inline-block;
@@ -187,7 +221,7 @@
   *display: inline;
   *zoom: 1;
 }
-.carousel1 .jcarousel-control span{
+.carousel1 .jcarousel-control span {
   display: inline-block;
   vertical-align: middle;
   *display: inline;
@@ -200,7 +234,7 @@
   background-position: 0 -50px;
   cursor: pointer;
 }
-.carousel1 .jcarousel-control span.cur{
+.carousel1 .jcarousel-control span.cur {
   background-position: -30px -50px;
 }
 .carousel1-clip {
@@ -210,15 +244,15 @@
   overflow: hidden;
   position: relative;
 }
-.carousel1 ul{
+.carousel1 ul {
   position: absolute;
   left: 0;
   top: 0;
 }
-.carousel1 li{
+.carousel1 li {
   float: left;
 }
-.carousel1-prev,.carousel1-next{
+.carousel1-prev, .carousel1-next {
   width: 23px;
   height: 45px;
   position: absolute;
@@ -228,26 +262,25 @@
   overflow: hidden;
   cursor: pointer;
 }
-.carousel1-prev{
+.carousel1-prev {
   left: 20px;
   background-position: 0 -80px;
 }
-.carousel1-prev:hover{
+.carousel1-prev:hover {
   -webkit-transition: none;
   transition: none;
   background-position: -60px -80px;
 }
-.carousel1-next{
+.carousel1-next {
   right: 20px;
   background-position: -30px -80px;
 }
-.carousel1-next:hover{
+.carousel1-next:hover {
   -webkit-transition: none;
   transition: none;
   background-position: -90px -80px;
 }
-
-.hd{
+.hd {
   margin-top: 10px;
   position: relative;
 }
@@ -256,7 +289,7 @@
   right: 30px;
   bottom: 0;
 }
-.buyinfo .hd{
+.buyinfo .hd {
   font-size: 20px;
   color: #ff4747;
   padding-left: 30px;
@@ -281,8 +314,7 @@
 .buyinfo li a:hover {
   text-decoration: none;
 }
-.buyinfo li h3, .buyinfo li p {
-}
+.buyinfo li h3, .buyinfo li p {}
 .buyinfo li h3 {
   font-size: 14px;
   padding-top: 8px;
@@ -304,13 +336,13 @@
   float: left;
   width: 100px;
 }
-.ico_clock{
+.ico_clock {
   width: 16px;
   height: 16px;
   background-position: -90px -50px;
   margin-right: 5px;
 }
-.buyinfo li.bItem{
+.buyinfo li.bItem {
   width: 300px;
   height: 506px;
   float: left;
@@ -319,23 +351,22 @@
   margin: 0;
   padding: 0;
 }
-.buyinfo li.bItem img{
+.buyinfo li.bItem img {
   width: 300px;
   height: 400px;
 }
-.has_bItem li{
+.has_bItem li {
   width: 200px;
   margin: 0 0 0 40px;
 }
-
-.summary{
+.summary {
   margin-top: 40px;
 }
-.summary-box{
+.summary-box {
   border: 1px solid #e4e4e4;
   overflow: hidden;
 }
-.summary-siderbar{
+.summary-siderbar {
   width: 130px;
   height: 150px;
   padding: 20px 30px 0 140px;
@@ -344,51 +375,51 @@
   float: left;
   position: relative;
 }
-.summary-siderbar img{
+.summary-siderbar img {
   position: absolute;
   bottom: 0;
   left: 0;
 }
-.summary-con{
+.summary-con {
   padding: 20px 50px 0 345px;
   font-size: 14px;
 }
-.summary-con p{
+.summary-con p {
   line-height: 22px;
   font-size: 12px;
   margin-top: 5px;
   color: #5c5c5c;
 }
-.footer{
+.footer {
   background-color: #f5f5f5;
   border-top: 1px solid #e4e4e4;
   margin-top: 48px;
 }
-.footer-news{
+.footer-news {
   width: 500px;
   padding: 20px 30px;
 }
-.footer-news p{
+.footer-news p {
   margin: 10px 0;
 }
-.footer-news .tit{
+.footer-news .tit {
   font-size: 14px;
   color: #f44444;
 }
-.footer-enterance{
+.footer-enterance {
   margin-top: 20px;
   padding-right: 50px;
   float: right;
   line-height: 22px;
   font-size: 14px;
 }
-.footer-imglist{
+.footer-imglist {
   clear: both;
   margin-top: 10px;
   padding-bottom: 15px;
   text-align: center;
 }
-.footer-imglist img{
+.footer-imglist img {
   margin: 0 6px;
 }
 .copyright {
