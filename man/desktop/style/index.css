@@ -59,6 +59,7 @@
   font-size: 18px;
   position: relative;
   cursor: pointer;
+  z-index: 99;
 }
 .menu-sift-arrow {
   width: 16px;
@@ -83,19 +84,22 @@
 .menu-sift-rela ul {
   padding-top: 8px;
   padding-left: 32px;
+  overflow: hidden;
+  *zoom: 1;
 }
 .menu-sift-rela li {
-  margin: 30px 0 0 0;
+  margin: 30px 0 0 0 ;
   width: 235px;
-}
-.menu-sift-rela li a{
   height: 16px;
   line-height: 16px;
+  overflow: hidden;
+  *float: left;
+}
+.menu-sift-rela li a{
   display: block;
   padding-right: 17px;
   font-size: 14px;
   color: #7a7a7a;
-  overflow: hidden;
   position: relative;
 }
  .menu-sift-rela li.cur a{
@@ -139,6 +143,9 @@
   margin-right: 20px;
   color: #a6a6a6;
 }
+.menu-sift-rela .sec-menu dd a:hover {
+  color: #f44444;
+}
 .menu-inpbox {
   width: 600px;
   padding: 5px 0 5px 50px;
@@ -153,6 +160,7 @@
   background-color: #fff;
   border: 0 none;
   font-size: 14px;
+  color: #666;
 }
 .menu-inpbox-btn {
   width: 60px;
@@ -427,4 +435,8 @@
   color: #888;
   line-height: 45px;
   background-color: #333;
+}
+
+.inp-cDgray{
+  color: #333;
 }

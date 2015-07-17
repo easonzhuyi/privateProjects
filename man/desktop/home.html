@@ -41,7 +41,7 @@
             <li><a href="">Специи<i class="ico_arrow"></i></a></li>
             <li><a href="">Рис, мука, зерно<i class="ico_arrow"></i></a></li>
           </ul>
-          <div class="sec-menu" style="display:block">
+          <div class="sec-menu" style="display:none">
             <dl>
               <dt>свежие овощи</dt>
               <dd><a href="">山药1</a><a href="">番薯</a><a href="">土豆</a><a href="">莲藕</a><a href="">净菜</a><a href="">马蹄</a></dd>
@@ -51,7 +51,7 @@
               <dd><a href="">山药1</a><a href="">番薯</a><a href="">土豆</a><a href="">莲藕</a><a href="">净菜</a><a href="">马蹄</a></dd>
             </dl>
           </div>
-          <div class="sec-menu">
+          <div class="sec-menu" style="display:none">
             <dl>
               <dt>свежие овощи</dt>
               <dd><a href="">山药2</a><a href="">番薯</a><a href="">土豆</a><a href="">莲藕</a><a href="">净菜</a><a href="">马蹄</a></dd>
@@ -61,7 +61,7 @@
               <dd><a href="">山药2</a><a href="">番薯</a><a href="">土豆</a><a href="">莲藕</a><a href="">净菜</a><a href="">马蹄</a></dd>
             </dl>
           </div>
-          <div class="sec-menu">
+          <div class="sec-menu" style="display:none">
             <dl>
               <dt>свежие овощи</dt>
               <dd><a href="">山药3</a><a href="">番薯</a><a href="">土豆</a><a href="">莲藕</a><a href="">净菜</a><a href="">马蹄</a></dd>
@@ -71,7 +71,7 @@
               <dd><a href="">山药3</a><a href="">番薯</a><a href="">土豆</a><a href="">莲藕</a><a href="">净菜</a><a href="">马蹄</a></dd>
             </dl>
           </div>
-          <div class="sec-menu">
+          <div class="sec-menu" style="display:none">
             <dl>
               <dt>свежие овощи</dt>
               <dd><a href="">山药4</a><a href="">番薯</a><a href="">土豆</a><a href="">莲藕</a><a href="">净菜</a><a href="">马蹄</a></dd>
@@ -84,7 +84,7 @@
         </div>
       </div>
       <div class="menu-inpbox">
-        <input class="menu-inpbox-inp" placeholder="Пожалуйста, введите название продукта" value="" />
+        <input class="menu-inpbox-inp" value="Пожалуйста, введите название продукта" />
         <button class="menu-inpbox-btn" type="button" name="button"></button>
       </div>
       <div class="menu-cart">
@@ -94,20 +94,38 @@
     </div>
   </div>
 
+<div class="row">
   <div id="focus" class="carousel1">
 
-   <ul>
-     <li><img src="pic/ban1.jpg" alt="" /></li>
-     <li><img src="pic/ban1.jpg" alt="" /></li>
-     <li><img src="pic/ban1.jpg" alt="" /></li>
-     <li><img src="pic/ban1.jpg" alt="" /></li>
-     <li><img src="pic/ban1.jpg" alt="" /></li>
-   </ul>
+    <ul>
+      <li>
+        <img src="pic/ban1.jpg" alt="" />
+      </li>
+      <li>
+        <img src="pic/ban1.jpg" alt="" />
+      </li>
+      <li>
+        <img src="pic/ban1.jpg" alt="" />
+      </li>
+      <li>
+        <img src="pic/ban1.jpg" alt="" />
+      </li>
+      <li>
+        <img src="pic/ban1.jpg" alt="" />
+      </li>
+    </ul>
 
- </div>
+  </div>
+</div>
   <script src="js/jquery.min.js"></script>
   <script type="text/javascript">
+  // console.log('aaa');
   $(function() {
+
+    $("input").on("click",function(){
+      $(this).addClass("inp-cDgray").attr("value","");
+    })
+
   	var sWidth = $("#focus").width(); //获取焦点图的宽度（显示面积）
   	var len = $("#focus ul li").length; //获取焦点图个数
   	var index = 0;
@@ -175,7 +193,12 @@
       $(this).addClass("cur").siblings().removeClass("cur");
       $(".menu-sift-rela .sec-menu").hide().eq($(this).index()).show();
     })
-    $(".menu-sift-rela").on("mouseleave",function(){$(".menu-sift-rela .sec-menu").hide()})
+    $(".menu-sift-rela .sec-menu").on("mousemove",function(){
+      $(this).show();
+    })
+    $(".menu-sift-rela").on("mouseleave",function(){
+      $(".menu-sift-rela .sec-menu").hide();
+    })
   });
 
   </script>
