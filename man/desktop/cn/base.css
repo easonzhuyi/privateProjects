@@ -1,0 +1,16 @@
+/*===== reset =====*/
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,em,button{margin:0;padding:0;}
+body{ font:12px/1.5 "Microsoft Yahei",arial,Simsun, sans-serif; color:#333; background-color: #fff; min-width: 1280px;}
+img, fieldset{border:none;vertical-align:middle;}
+input, textarea{font-size:12px;}
+table{border-collapse:collapse;}
+a{color:#333;text-decoration:none;}
+a:hover{color: #ff4747;text-decoration:underline;}
+h1,h2,h3,h4,h5{font-family:"Microsoft Yahei",Simsun;font-weight: normal;font-size: 12px;}
+address,cite,dfn,em,var{font-style:normal}
+ul,ol{list-style:none;}
+li{vertical-align: top;}
+input[type="button"],input[type="submit"]{-webkit-appearance:none;}
+input[type="text"]{border-radius:0;}
+.f14{font-size: 14px;}
+
