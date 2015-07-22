@@ -7,8 +7,11 @@
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta content="telephone=no" name="format-detection" />
 	<meta name="msapplication-tap-highlight" content="no"/>
+	<link rel="stylesheet" href="css/index.min.css" type="text/css">
 	<link rel="stylesheet" type="text/css" href="phone.css" />
-	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<script type="text/javascript" src="js/zepto.min.js"></script>
+	<script type="text/javascript" src="js/all.min.js"></script>
+	<script type="text/javascript" src="js/iscroll_constructor.js"></script>
 </head>
 <body>
 	<!-- S: header -->
@@ -19,92 +22,73 @@
 		</div>
 	</header>
 	<!-- E: header -->
-<div class="bdboxA inquiry">
-	<ul class="listA">
-		<li>
-			<div class="inquiry--box">
-				<div class="tit">
-					询单编号：BD123456<span class="order-tag--red">询价中</span>
-				</div>
-				<p>商品：<span class="cPurple">红富士苹果、小乡里、东北大番茄</span></p>
-				<p>交货地：<span>乌兰乌德满洲里园区1号仓库</span></p>
-				<p>采购商：<span>伏尔加河贸易有限公司</span></p>
-			</div>
-		</li>
-		<li>
-			<div class="inquiry--box">
-				<div class="tit">
-					询单编号：BD123456<span class="order-tag--redBd">已回盘</span><span class="order-tag--purple">待确认</span><span class="order-tag--purpleBd">待确认</span>
-				</div>
-				<p>商品：<span class="cPurple">红富士苹果、小乡里、东北大番茄</span></p>
-				<p>交货地：<span>乌兰乌德满洲里园区1号仓库</span></p>
-				<p>采购商：<span>伏尔加河贸易有限公司</span></p>
-			</div>
-		</li>
-		<li>
-			<div class="inquiry--box">
-				<div class="tit">
-					询单编号：BD123456<span class="order-tag--grayBd">已取消</span>
-				</div>
-				<p>商品：<span class="cPurple">红富士苹果、小乡里、东北大番茄</span></p>
-				<p>交货地：<span>乌兰乌德满洲里园区1号仓库</span></p>
-				<p>采购商：<span>伏尔加河贸易有限公司</span></p>
-			</div>
-		</li>
-		<li>
-			<div class="inquiry--box">
-				<div class="tit">
-					询单编号：BD123456<span class="order-tag--grayBd">已取消</span>
-				</div>
-				<p>商品：<span class="cPurple">红富士苹果、小乡里、东北大番茄</span></p>
-				<p>交货地：<span>乌兰乌德满洲里园区1号仓库</span></p>
-				<p>采购商：<span>伏尔加河贸易有限公司</span></p>
-			</div>
-		</li>
-		<li>
-			<div class="inquiry--box">
-				<div class="tit">
-					询单编号：BD123456<span class="order-tag--grayBd">已取消</span>
-				</div>
-				<p>商品：<span class="cPurple">红富士苹果、小乡里、东北大番茄</span></p>
-				<p>交货地：<span>乌兰乌德满洲里园区1号仓库</span></p>
-				<p>采购商：<span>伏尔加河贸易有限公司</span></p>
-			</div>
-		</li>
-		<li>
-			<div class="inquiry--box">
-				<div class="tit">
-					询单编号：BD123456<span class="order-tag--grayBd">已取消</span>
-				</div>
-				<p>商品：<span class="cPurple">红富士苹果、小乡里、东北大番茄</span></p>
-				<p>交货地：<span>乌兰乌德满洲里园区1号仓库</span></p>
-				<p>采购商：<span>伏尔加河贸易有限公司</span></p>
-			</div>
-		</li>
-		<li>
-			<div class="inquiry--box">
-				<div class="tit">
-					询单编号：BD123456<span class="order-tag--grayBd">已取消</span>
-				</div>
-				<p>商品：<span class="cPurple">红富士苹果、小乡里、东北大番茄</span></p>
-				<p>交货地：<span>乌兰乌德满洲里园区1号仓库</span></p>
-				<p>采购商：<span>伏尔加河贸易有限公司</span></p>
-			</div>
-		</li>
-		<li>
-			<div class="inquiry--box">
-				<div class="tit">
-					询单编号：BD123456<span class="order-tag--grayBd">已取消</span>
-				</div>
-				<p>商品：<span class="cPurple">红富士苹果、小乡里、东北大番茄</span></p>
-				<p>交货地：<span>乌兰乌德满洲里园区1号仓库</span></p>
-				<p>采购商：<span>伏尔加河贸易有限公司</span></p>
-			</div>
-		</li>
-	</ul>
 
-	<div class="blankdiv"></div>
-
+	<div class="bdboxA inquiry iscroll-wrapper" id="iscroll-wrapper">
+		<div id="iscroll-container" class="iscroll-container">
+			<div id="iscroll-pullDown" class="loading_hd">
+				<span class="pullDownIcon"></span>
+				<span id="iscroll-pullDownLabel" class="pullDownLabel">下拉刷新...</span>
+			</div>
+			<ul class="listA" id="iscroll-dataList">
+				<li>
+					<div class="inquiry--box">
+						<div class="tit">
+							询单编号：BD123456
+							<span class="order-tag--red">询价中</span>
+						</div>
+						<p>商品：
+							<span class="cPurple">红富士苹果、小乡里、东北大番茄</span>
+						</p>
+						<p>交货地：
+							<span>乌兰乌德满洲里园区1号仓库</span>
+						</p>
+						<p>采购商：
+							<span>伏尔加河贸易有限公司</span>
+						</p>
+					</div>
+				</li>
+				<li>
+					<div class="inquiry--box">
+						<div class="tit">
+							询单编号：BD123456
+							<span class="order-tag--redBd">已回盘</span>
+							<span class="order-tag--purple">待确认</span>
+							<span class="order-tag--purpleBd">待确认</span>
+						</div>
+						<p>商品：
+							<span class="cPurple">红富士苹果、小乡里、东北大番茄</span>
+						</p>
+						<p>交货地：
+							<span>乌兰乌德满洲里园区1号仓库</span>
+						</p>
+						<p>采购商：
+							<span>伏尔加河贸易有限公司</span>
+						</p>
+					</div>
+				</li>
+				<li>
+					<div class="inquiry--box">
+						<div class="tit">
+							询单编号：BD123456
+							<span class="order-tag--grayBd">已取消</span>
+						</div>
+						<p>商品：
+							<span class="cPurple">红富士苹果、小乡里、东北大番茄</span>
+						</p>
+						<p>交货地：
+							<span>乌兰乌德满洲里园区1号仓库</span>
+						</p>
+						<p>采购商：
+							<span>伏尔加河贸易有限公司</span>
+						</p>
+					</div>
+				</li>
+			</ul>
+			<div id="iscroll-pullUp" class="loading_bd">
+				<span class="pullUpIcon"></span>
+				<span class="pullUpLabel" id="iscroll-pullUpLabel">上拉加载更多...</span>
+			</div>
+		</div>
 	</div>
 
 	<!-- S: footer -->
@@ -116,5 +100,11 @@
 		<li class="btn_mine"><a href="###">我</a></li>
 	</footer>
 	<!-- S: footer -->
+
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function(){getLoader()('iscroll')}, false);
+</script>
+
+
 </body>
 </html>
