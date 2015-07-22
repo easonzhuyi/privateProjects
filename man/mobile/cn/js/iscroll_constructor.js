@@ -1,16 +1,14 @@
 var getLoader;
 (function() {
-
   var firstresult = 0;
   var pagesize = 20;
   var stocktype = 0;
-
   var myScroll;
   var pullDownEl, pullDownL;
   var pullDownc, pullUpc;
   var pullUpEl, pullUpL;
   var Downcount = 0,
-    Upcount = 0;
+      Upcount = 0;
   var loadingStep = 0; //加载状态0默认，1显示加载状态，2执行加载数据，只有当为0时才能再次加载，这是防止过快拉动刷新
 
   function pullDownAction() { //下拉事件
