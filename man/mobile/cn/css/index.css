@@ -663,7 +663,7 @@ input[type="search"] {
 
 .iscroll-container {
 	width: 100%;
-	min-height: 100%;
+	min-height: 115%;
 	position: relative;
 	overflow: hidden;
 }
