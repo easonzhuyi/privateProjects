@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta content="telephone=no" name="format-detection" />
+	<meta name="msapplication-tap-highlight" content="no"/>
+	<link rel="stylesheet" href="http://easonzhuyi.github.io/privateProjects/man/mobile/cn/css/index.min.css" type="text/css">
+	<link rel="stylesheet" href="phone.css" type="text/css">
+</head>
+<body>
+<!-- S: header -->
+<header class="header">
+	<div class="cm-header">
+		<h1 class="cm-title">消息</h1>
+	</div>	
+</header>
+<!-- E: header -->
+
+<!-- S: message -->
+<div class="message">
+	<ul class="list">
+		<li>
+			<a href="###">
+				<h3>系统消息</h3>
+				<p>您有新的询单消息</p>
+
+				<span class="img">
+					<img src="images/ico_logo_m.png">	
+					<i class="num">3</i>
+				</span>
+				<em class="date">15/07/14</em>		
+			</a>
+		</li>
+
+		<li>
+			<a href="###">
+				<h3>满洲里贸易公司</h3>
+				<p>您有新回复的询单消息</p>
+
+				<span class="img">
+					<div style="width: 50px;height: 50px;background-color: #393e66;border-radius:50%;" title="测试div，为了显示logo图片，实际情况请删除换img"></div>	
+					<i class="num">99</i>
+				</span>
+				<em class="date">22:20</em>		
+			</a>
+		</li>
+
+		<li>
+			<a href="###">
+				<h3>满洲里贸易公司</h3>
+				<p>您有新回复的询单消息</p>
+
+				<span class="img">
+					<div style="width: 50px;height: 50px;background-color: #393e66;border-radius:50%;" title="测试div，为了显示logo图片，实际情况请删除换img"></div>	
+				</span>
+				<em class="date">昨天</em>		
+			</a>
+		</li>
+	</ul>
+</div>
+<!-- S: message -->
+
+<div class="blankdiv"></div>
+
+<!-- S: footer -->
+<footer class="footer">
+	<li class="btn_index"><a href="###">首页</a></li>
+	<li class="btn_service"><a href="###">综合服务</a></li>
+	<li class="btn_message on"><a href="###">消息</a></li>
+	<li class="btn_order"><a href="###">订单中心</a></li>
+	<li class="btn_mine"><a href="###">我</a></li>
+</footer>
+<!-- S: footer -->
+
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".message > ul >li > a").on("touchstart" , function(){
+		$(this).css({
+			"background-color": "#f1f1f1",
+			"margin-left" : "-15px",
+			"padding-left" : "75px"
+		});
+		$(this).find(".img").css("left" , "15px;")
+	});
+
+	$(".message > ul >li > a").on("touchend" , function(){
+		$(this).css({
+			"background-color": "#fff",
+			"margin-left" : "0",
+			"padding-left" : "60px"
+		});
+		$(this).find(".img").css("left" , "0px;")
+	});
+})
+
+</script>
+
+</body>
+</html>

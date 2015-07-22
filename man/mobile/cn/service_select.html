@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta content="telephone=no" name="format-detection" />
+	<meta name="msapplication-tap-highlight" content="no"/>
+	<link rel="stylesheet" href="http://easonzhuyi.github.io/privateProjects/man/mobile/cn/css/index.min.css" type="text/css">
+	<link rel="stylesheet" href="phone.css" type="text/css">
+</head>
+<body>
+<!-- S: header -->
+<header class="header">
+	<div class="cm-header">
+		<h1 class="cm-title">提交意向单</h1>
+		<a href="#" class="cm-back">综合服务</a>
+	</div>	
+</header>
+<!-- E: header -->
+
+<!-- S: service_select -->
+<div class="service_select_info">
+	<h3>请选择您需要的服务</h3>
+	<p>
+		可留联系方式，我们会尽快与您联系。<br />
+		您也能登录我司网站下单。
+	</p>
+</div>
+
+<ul class="service_select_box">
+	<li class="selected">
+		出口代理<i class="ico_select select"></i>
+	</li>
+	<li>
+		出口报关<i class="ico_select select"></i>
+	</li>
+	<li>
+		出口报检<i class="ico_select select"></i>
+	</li>
+	<li>
+		俄境清关<i class="ico_select select"></i>
+	</li>
+	<li class="selected">
+		国内运输<i class="ico_select select"></i>
+	</li>
+	<li class="selected">
+		俄境运输<i class="ico_select select"></i>
+	</li>
+	<li>
+		国内仓储<i class="ico_select select"></i>
+	</li>
+	<li>
+		俄境仓储<i class="ico_select select"></i>
+	</li>
+</ul>
+
+<!-- S: service_select -->
+
+<div class="blankdiv100"></div>
+
+<!-- S: service_select_sure -->
+<div class="service_select_sure">
+	<div class="common_text">
+		<input type="text" placeholder="请输入您的手机号或邮箱">
+	</div>
+	<div class="common_btn btn_blue">
+		<input type="button" value="提交">
+	</div>
+</div>
+<!-- S: service_select_sure -->
+
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".service_select_box > li").on("touchend" , function(){
+		$(this).toggleClass("selected");
+	});
+});
+</script>
+
+</body>
+</html>

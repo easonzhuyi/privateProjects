@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta content="telephone=no" name="format-detection" />
+	<meta name="msapplication-tap-highlight" content="no"/>
+	<link rel="stylesheet" href="http://easonzhuyi.github.io/privateProjects/man/mobile/cn/css/index.min.css" type="text/css">
+	<link rel="stylesheet" href="phone.css" type="text/css">
+	<script type="text/javascript" src="js/zepto.min.js"></script>
+</head>
+<body>
+<!-- S: header -->
+<header class="header">
+	<div class="cm-header">
+		<h1 class="cm-title">俄境仓储</h1>
+
+		<a href="#" class="cm-back">综合服务</a>
+		<a href="#" class="cm-btn-txt">提交意向单</a>
+	</div>
+</header>
+<!-- E: header -->
+
+<!-- S: nav-select -->
+<nav class="nav-select">
+	<ul>
+		<li>所在城市</li>
+		<li>仓库类型</li>
+	</ul>
+	<dl class="pop_city pop_animate_up">
+		<dd>赤塔</dd>
+		<dd>乌兰乌德</dd>
+		<dd>伊尔库茨克</dd>
+	</dl>
+	<dl class="pop_city pop_animate_up">
+		<dd>暖库</dd>
+		<dd>暖库暖库</dd>
+		<dd>暖库暖库暖</dd>
+	</dl>
+</nav>
+<!-- E: banner-index -->
+
+<!-- S: service-russtore -->
+<div class="service-russtore">
+	<ul>
+		<li>
+			<h3 class="hd">乌兰乌德仓库名</h3>
+			<dl class="bd">
+				<dd  class="info">费用：<em class="fred">15,000</em> <span class="fgray">每天每立方米</span></dd>
+				<dd class="info_r">类型：<em class="fblue">暖库</em></dd>
+			</dl>
+			<p class="ft">地址：<span class="fgray">乌兰乌德满洲里园区1号仓库</span></p>
+		</li>
+		<li>
+			<h3 class="hd">乌兰乌德仓库名</h3>
+			<dl class="bd">
+				<dd  class="info">费用：<em class="fred">15,000</em> <span class="fgray">每天每立方米</span></dd>
+				<dd class="info_r">类型：<em class="fblue">暖库</em></dd>
+			</dl>
+			<p class="ft">地址：<span class="fgray">乌兰乌德满洲里园区1号仓库</span></p>
+		</li>
+		<li>
+			<h3 class="hd">乌兰乌德仓库名</h3>
+			<dl class="bd">
+				<dd  class="info">费用：<em class="fred">15,000</em> <span class="fgray">每天每立方米</span></dd>
+				<dd class="info_r">类型：<em class="fblue">暖库</em></dd>
+			</dl>
+			<p class="ft">地址：<span class="fgray">乌兰乌德满洲里园区1号仓库</span></p>
+		</li>
+	</ul>
+</div>
+<!-- S: service-russtore -->
+
+<div class="blankdiv"></div>
+<div class="fullpage"></div>
+<!-- S: footer -->
+<footer class="footer">
+	<li class="btn_index"><a href="###">首页</a></li>
+	<li class="btn_service on"><a href="###">综合服务</a></li>
+	<li class="btn_message"><a href="###">消息</a></li>
+	<li class="btn_order"><a href="###">订单中心</a></li>
+	<li class="btn_mine"><a href="###">我</a></li>
+</footer>
+<!-- S: footer -->
+
+<script type="text/javascript">
+$(function(){
+	$(".nav-select > ul > li").on("touchstart" ,function(){
+		var obj = $(this);
+		if(obj.hasClass("on")){
+			$(".pop_city.pop_animate_down").removeClass("pop_animate_down").addClass("pop_animate_up");
+			obj.removeClass("on");
+			$(".fullpage").hide();
+		}
+		else{
+			obj.addClass("on");
+			obj.siblings("li").removeClass("on");
+			$(".pop_city.pop_animate_down").removeClass("pop_animate_down").addClass("pop_animate_up");
+			$(".pop_city.pop_animate_up").eq(obj.index()).removeClass("pop_animate_up").addClass("pop_animate_down");
+			$(".fullpage").show();
+		}
+	});
+
+	$(".fullpage").on("touchstart" ,function(){
+		$(".pop_city.pop_animate_down").removeClass("pop_animate_down").addClass("pop_animate_up");
+		$(".nav-select > ul > li").removeClass("on");
+		$(".fullpage").hide();
+	});
+});
+
+document.addEventListener('DOMContentLoaded', function(){getLoader()('iscroll')}, false);
+</script>
+</body>
+</html>
