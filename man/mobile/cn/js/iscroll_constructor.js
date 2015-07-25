@@ -36,15 +36,15 @@ var getLoader;
 
   getLoader = function() {
     return function loaded(idname) {
-      pullDownEl = document.getElementById(idname + '-pullDown');
-      pullDownL = document.getElementById(idname + '-pullDownLabel');
+      pullDownEl = document.getElementById(idname + '-pull-down');
+      pullDownL = document.getElementById(idname + '-pull-down-label');
 
       pullDownEl['class'] = pullDownEl.className;
       // pullDownEl.className = '';
       // pullDownEl.style.display = 'NONE';
 
-      pullUpEl = document.getElementById(idname + '-pullUp');
-      pullUpL = document.getElementById(idname + '-pullUpLabel');
+      pullUpEl = document.getElementById(idname + '-pull-up');
+      pullUpL = document.getElementById(idname + '-pull-up-label');
       pullUpEl['class'] = pullUpEl.className;
       // pullUpEl.style.display = 'NONE';
 
@@ -87,13 +87,13 @@ var getLoader;
       myScroll.on('scrollEnd', function() {
         if (loadingStep == 1) {
           if (pullUpEl.className.match('flip')) {
-            pullUpEl.className = 'loading_bd';
+            pullUpEl.className = 'loading-bd';
             pullUpL.innerHTML = 'Loading...';
             loadingStep = 2;
             pullUpAction();
             console.log('end down');
           } else if (pullDownEl.className.match('flip')) {
-            pullDownEl.className = 'loading_hd';
+            pullDownEl.className = 'loading-hd';
             pullDownL.innerHTML = 'Loading...';
             loadingStep = 2;
             pullDownAction();

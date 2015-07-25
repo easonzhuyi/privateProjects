@@ -7,7 +7,8 @@
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta content="telephone=no" name="format-detection" />
 	<meta name="msapplication-tap-highlight" content="no"/>
-	<link rel="stylesheet" href="css/index.min.css" type="text/css">
+	<link rel="stylesheet" href="../css/index.min.css" type="text/css">
+	<script type="text/javascript" src="../js/zepto.min.js"></script>
 </head>
 <body>
 <!-- S: header -->
@@ -19,8 +20,8 @@
 </header>
 <!-- E: header -->
 
-<!-- S: service_select -->
-<div class="service_select_info">
+<!-- S: service-select -->
+<div class="service-select-info">
 	<h3>请选择您需要的服务</h3>
 	<p>
 		可留联系方式，我们会尽快与您联系。<br />
@@ -28,52 +29,51 @@
 	</p>
 </div>
 
-<ul class="service_select_box">
+<ul class="service-select-box">
 	<li class="selected">
-		出口代理<i class="ico_select select"></i>
+		出口代理<i class="ico-select select"></i>
 	</li>
 	<li>
-		出口报关<i class="ico_select select"></i>
+		出口报关<i class="ico-select select"></i>
 	</li>
 	<li>
-		出口报检<i class="ico_select select"></i>
+		出口报检<i class="ico-select select"></i>
 	</li>
 	<li>
-		俄境清关<i class="ico_select select"></i>
-	</li>
-	<li class="selected">
-		国内运输<i class="ico_select select"></i>
+		俄境清关<i class="ico-select select"></i>
 	</li>
 	<li class="selected">
-		俄境运输<i class="ico_select select"></i>
+		国内运输<i class="ico-select select"></i>
+	</li>
+	<li class="selected">
+		俄境运输<i class="ico-select select"></i>
 	</li>
 	<li>
-		国内仓储<i class="ico_select select"></i>
+		国内仓储<i class="ico-select select"></i>
 	</li>
 	<li>
-		俄境仓储<i class="ico_select select"></i>
+		俄境仓储<i class="ico-select select"></i>
 	</li>
 </ul>
 
-<!-- S: service_select -->
+<!-- S: service-select -->
 
 <div class="blankdiv100"></div>
 
-<!-- S: service_select_sure -->
-<div class="service_select_sure">
-	<div class="common_text">
+<!-- S: service-select-sure -->
+<div class="service-select-sure">
+	<div class="common-text">
 		<input type="text" placeholder="请输入您的手机号或邮箱">
 	</div>
-	<div class="common_btn btn_blue">
+	<div class="common-btn btn-blue">
 		<input type="button" value="提交">
 	</div>
 </div>
-<!-- S: service_select_sure -->
+<!-- S: service-select-sure -->
 
-<script type="text/javascript" src="js/zepto.min.js"></script>
 <script type="text/javascript">
 $(function(){
-	$(".service_select_box > li").on("touchend" , function(){
+	$(".service-select-box > li").on("touchend" , function(){
 		$(this).toggleClass("selected");
 	});
 });

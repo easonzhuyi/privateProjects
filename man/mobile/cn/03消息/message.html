@@ -7,7 +7,8 @@
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta content="telephone=no" name="format-detection" />
 	<meta name="msapplication-tap-highlight" content="no"/>
-	<link rel="stylesheet" href="css/index.min.css" type="text/css">
+	<link rel="stylesheet" href="../css/index.min.css" type="text/css">
+	<script type="text/javascript" src="../js/zepto.min.js"></script>
 </head>
 <body>
 <!-- S: header -->
@@ -27,7 +28,7 @@
 				<p>您有新的询单消息</p>
 
 				<span class="img">
-					<img src="images/ico_logo_m.png">
+					<img src="../images/ico_logo_m.png">
 					<i class="num">3</i>
 				</span>
 				<em class="date">15/07/14</em>
@@ -66,15 +67,16 @@
 
 <!-- S: footer -->
 <footer class="footer">
-	<li class="btn_index"><a href="###">首页</a></li>
-	<li class="btn_service"><a href="###">综合服务</a></li>
-	<li class="btn_message on"><a href="###">消息</a></li>
-	<li class="btn_order"><a href="###">订单中心</a></li>
-	<li class="btn_mine"><a href="###">我</a></li>
+	<ul>
+		<li class="btn-index"><a href="###">首页</a></li>
+		<li class="btn-service"><a href="###">综合服务</a></li>
+		<li class="btn-message on"><a href="###">消息</a></li>
+		<li class="btn-order"><a href="###">订单中心</a></li>
+		<li class="btn-mine"><a href="###">我</a></li>
+	</ul>
 </footer>
 <!-- S: footer -->
 
-<script type="text/javascript" src="js/zepto.min.js"></script>
 <script type="text/javascript">
 $(function(){
 	$(".message > ul >li > a").on("touchstart" , function(){
