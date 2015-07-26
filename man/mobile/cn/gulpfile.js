@@ -83,6 +83,7 @@ gulp.task('css', function() {
 
 gulp.task('js', function() {
     return gulp.src('./_source/js/*.js')
+        .pipe(plumber({ errorHandler: onError }))
         .pipe(concat('all.js'))
         .pipe(gulp.dest('./js/'))
         .pipe(rename({suffix: '.min'}))

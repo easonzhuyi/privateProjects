@@ -1,15 +1,43 @@
-$(document).on("touchstart",".sign-btnarea a",function(event){
-  // console.log('start');
-  event.preventDefault();
-  $(this).addClass("on");
-  return false;
-  // console.log('end');
-}).on("touchend",".sign-btnarea a",function(event){
-  // console.log('start');
-  event.preventDefault();
-  $(this).removeClass("on");
-  return false;
-  // console.log('end');
+$(function(){
+  $(document).on("touchstart",".js-btn",function(event){
+    // console.log('start');
+    event.preventDefault();
+    $(this).addClass("on");
+    return false;
+    // console.log('end');
+  }).on("touchend",".js-btn",function(event){
+    // console.log('start');
+    event.preventDefault();
+    $(this).removeClass("on");
+    return false;
+    // console.log('end');
+  });
+
+  var vh,ch,cache_h;
+  $(document).on("touchstart",".js-btn-unfold",function(){
+    var box = $(this).parents(".js-box-unfold"),
+        content = $(this).parents(".tit").siblings(".js-content-unfold");
+    // console.log('start');
+    $(this).toggleClass("on");
+    if($(this).hasClass("on")){
+      if(!cache_h){
+        // console.log('1111');
+        vh = box.offset().height;
+        cache_h = vh;
+        vh = null;
+      }
+      ch = content.offset().height;
+      // console.log(vh);
+      box.height(cache_h+ch+2);
+    }
+    else {
+      box.height(cache_h);
+    }
+    box = null;
+    content = null;
+  });
+  //阻止冒泡 模拟touchstart
+  // $(".js-btn-unfold.on").trigger("touchstart");
 });
 
 /*! iScroll v5.1.3 ~ (c) 2008-2014 Matteo Spinelli ~ http://cubiq.org/license */
