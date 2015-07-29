@@ -38,6 +38,11 @@ $(function(){
   });
   //阻止冒泡 模拟touchstart
   // $(".js-btn-unfold.on").trigger("touchstart");
+
+
+  $(document).on("touchstart",".btn-undercarriage",function(){
+    $(this).parents("li").remove();
+  });
 });
 
 /*! iScroll v5.1.3 ~ (c) 2008-2014 Matteo Spinelli ~ http://cubiq.org/license */
